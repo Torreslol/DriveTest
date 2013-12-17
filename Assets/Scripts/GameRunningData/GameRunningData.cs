@@ -14,7 +14,6 @@ public enum CarType
 	car,
 	truck,
 	bus,
-	miniBus,
 	schoolBus
 	
 };

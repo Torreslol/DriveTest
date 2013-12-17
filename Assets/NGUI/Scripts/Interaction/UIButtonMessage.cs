@@ -34,7 +34,7 @@ public class UIButtonMessage : MonoBehaviour
 
 	void OnEnable () { if (mStarted && mHighlighted) OnHover(UICamera.IsHighlighted(gameObject)); }
 
-	void OnHover (bool isOver)
+	public void OnHover (bool isOver)
 	{
 		if (enabled)
 		{
@@ -44,7 +44,7 @@ public class UIButtonMessage : MonoBehaviour
 		}
 	}
 
-	void OnPress (bool isPressed)
+	public void OnPress (bool isPressed)
 	{
 		if (enabled)
 		{

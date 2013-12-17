@@ -17,6 +17,8 @@ public class UIImageButton : MonoBehaviour
 	public string normalSprite;
 	public string hoverSprite;
 	public string pressedSprite;
+	public UIButtonScale _buttonScle;
+	public UIButtonSound _buttonSound;
 
 	void OnEnable ()
 	{
@@ -29,23 +31,29 @@ public class UIImageButton : MonoBehaviour
 	void Start ()
 	{
 		if (target == null) target = GetComponentInChildren<UISprite>();
+		_buttonScle=gameObject.GetComponentInChildren<UIButtonScale>();
+		_buttonSound=gameObject.GetComponentInChildren<UIButtonSound>();
 	}
 
-	void OnHover (bool isOver)
+	public void OnHover (bool isOver)
 	{
 		if (enabled && target != null)
 		{
 			target.spriteName = isOver ? hoverSprite : normalSprite;
 			target.MakePixelPerfect();
+			_buttonScle.OnHover(true);
+			_buttonSound.OnPress(true);
 		}
 	}
 
-	void OnPress (bool pressed)
+	public void OnPress (bool pressed)
 	{
 		if (enabled && target != null)
 		{
 			target.spriteName = pressed ? pressedSprite : normalSprite;
 			target.MakePixelPerfect();
+			_buttonScle.OnPress(true);
+			_buttonSound.OnPress(true);
 		}
 	}
 }

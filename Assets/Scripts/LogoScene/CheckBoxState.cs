@@ -17,6 +17,7 @@ public class CheckBoxState : MonoBehaviour {
 	public void OnActivate()
 	{
 		string name=gameObject.name;
+		Debug.Log("name="+name);
 		if(_checkBox.isChecked)
 		{
 			switch(name)
@@ -24,9 +25,6 @@ public class CheckBoxState : MonoBehaviour {
 			case"Checkbox-bus":
 					GameRunningData.instance._carType=CarType.bus;
 					break;
-			case"Checkbox-minibus":
-					GameRunningData.instance._carType=CarType.miniBus;
-				break;
 			case"Checkbox-schoolbus":
 					GameRunningData.instance._carType=CarType.schoolBus;
 				break;

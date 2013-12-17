@@ -179,6 +179,7 @@
      <Compile Include="Assets\Scripts\LogoScene\ChooseCarController.cs" />
      <Compile Include="Assets\Scripts\LogoScene\LogoViewController.cs" />
      <Compile Include="Assets\Scripts\LogoScene\UIController.cs" />
+     <Compile Include="Assets\Scripts\Reachability\Reachability.cs" />
      <Compile Include="Assets\Scripts\TrafficLights\TimeManager.cs" />
      <Compile Include="Assets\Scripts\TrafficLights\TrafficLights.cs" />
      <Compile Include="Assets\~AlternatePhysicsModel\Scripts\AerodynamicResistance.cs" />

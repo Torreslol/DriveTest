@@ -9,6 +9,8 @@ public class LogoViewController : UIController
 		public ChooseCarController _chooseView;
 		public Vector3 forwardPosition;
 		public Vector3 backgroundPosition;
+	public UIImageButton _chaosu;
+
 
 		// Use this for initialization
 		void Start ()
@@ -16,6 +18,8 @@ public class LogoViewController : UIController
 				_forwardPosition = forwardPosition;
 				_backgroundPosition = backgroundPosition;
 		        transform.localPosition=forwardPosition;
+		_chaosu.OnHover(true);
+		 
 
 		}
 	
