@@ -1,10 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LogoScene\ChooseCarController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LogoScene\ModeSprite.cs">
     <Files>
+      <File FileName="Assets\Scripts\LogoScene\ModeSprite.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\LogoScene\ChooseCarController.cs" Line="6" Column="33" />
-      <File FileName="Assets\Scripts\LogoScene\LogoViewController.cs" Line="24" Column="4" />
-      <File FileName="Assets\Scripts\LogoScene\UIController.cs" Line="14" Column="2" />
+      <File FileName="Assets\Scripts\LogoScene\LogoViewController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LogoScene\UIController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
