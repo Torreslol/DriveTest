@@ -66,4 +66,5 @@ public class UIButtonScale : MonoBehaviour
 			mHighlighted = isOver;
 		}
 	}
+
 }

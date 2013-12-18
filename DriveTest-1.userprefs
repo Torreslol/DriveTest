@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Logitech SDK/Script Sample/LogitechSteeringWheel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LogoScene/ModeSprite.cs">
     <Files>
-      <File FileName="Assets/Scripts/Reachability/Reachability.cs" Line="64" Column="5" />
-      <File FileName="Assets/Logitech SDK/Script Sample/LogitechSteeringWheel.cs" Line="59" Column="86" />
+      <File FileName="Assets/Scripts/LogoScene/LogoViewController.cs" Line="57" Column="12" />
+      <File FileName="Assets/Scripts/LogoScene/ModeSprite.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

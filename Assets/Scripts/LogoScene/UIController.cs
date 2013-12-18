@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class UIController : MonoBehaviour {
 	protected Vector3 _forwardPosition;
 	protected Vector3 _backgroundPosition;
+	protected PanelType _panel=PanelType.selectMode;
+
 
 
 	// Use this for initialization

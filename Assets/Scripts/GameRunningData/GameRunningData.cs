@@ -17,6 +17,12 @@ public enum CarType
 	schoolBus
 	
 };
+public enum PanelType
+{
+	selectMode=0,
+	selectCar
+
+};
 
 public class GameRunningData : MonoBehaviour {
 	public static GameRunningData instance = null; //单键

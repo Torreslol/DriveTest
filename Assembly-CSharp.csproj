@@ -178,6 +178,7 @@
      <Compile Include="Assets\Scripts\LogoScene\CheckBoxState.cs" />
      <Compile Include="Assets\Scripts\LogoScene\ChooseCarController.cs" />
      <Compile Include="Assets\Scripts\LogoScene\LogoViewController.cs" />
+     <Compile Include="Assets\Scripts\LogoScene\ModeSprite.cs" />
      <Compile Include="Assets\Scripts\LogoScene\UIController.cs" />
      <Compile Include="Assets\Scripts\Reachability\Reachability.cs" />
      <Compile Include="Assets\Scripts\TrafficLights\TimeManager.cs" />

@@ -3,11 +3,15 @@ using System.Collections;
 
 public class CheckBoxState : MonoBehaviour {
 	public UISprite _lockSprite;
-	private UICheckbox _checkBox;
+	public UICheckbox _checkBox;
+	private UIButtonSound _buttonSound;
+	private UIButtonScale _buttonScle;
 	// Use this for initialization
 	void Start () {
 
 		_checkBox=gameObject.GetComponentInChildren<UICheckbox>();
+		_buttonScle=gameObject.GetComponentInChildren<UIButtonScale>();
+		_buttonSound=gameObject.GetComponentInChildren<UIButtonSound>();
 	}
 	
 	// Update is called once per frame
@@ -17,9 +21,10 @@ public class CheckBoxState : MonoBehaviour {
 	public void OnActivate()
 	{
 		string name=gameObject.name;
-		Debug.Log("name="+name);
+
 		if(_checkBox.isChecked)
 		{
+
 			switch(name)
 			{
 			case"Checkbox-bus":

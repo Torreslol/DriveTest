@@ -18,7 +18,7 @@ public class LogoViewController : UIController
 				_forwardPosition = forwardPosition;
 				_backgroundPosition = backgroundPosition;
 		        transform.localPosition=forwardPosition;
-		_chaosu.OnHover(true);
+		       _chaosu.OnHover(true);
 		 
 
 		}
@@ -33,26 +33,28 @@ public class LogoViewController : UIController
 		/// </summary>
 		/// <returns>The over speed.</returns>
 		/// <param name="go">Go.</param>
-		public void SelectOverSpeed (GameObject go)
+		public void SelectOverSpeed (Mode gameMode)
 		{
 				
 				
-				switch (go.name) 
+				switch (gameMode) 
 		       {
-				case "Image Button-chaoyuan":
+		case Mode.overMan:
 			GameRunningData.instance._gameMode=Mode.overMan;
+
 						break;
-				case "Image Button-pilao":
+		case Mode.overTime:
 			GameRunningData.instance._gameMode=Mode.overTime;			
 						break;
-				case "Image Button-chaosu":
+		case Mode.overSpeed:
 			GameRunningData.instance._gameMode=Mode.overSpeed;
 						break;
-				case "Image Button-chaozai":
+		case Mode.overLoading:
 			GameRunningData.instance._gameMode=Mode.overLoading;
 						break;
 				}
-				GoBackground (); 
+				 GoBackground (); 
+		         base._panel=PanelType.selectCar;
 		        _chooseView.Reload();
 		        _chooseView.GoForward ();
 		}
