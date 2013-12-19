@@ -20,19 +20,39 @@ public class ModeSprite : MonoBehaviour {
 	void Update () {
 	
 	}
-	public void OnHover()
+	public void OnHover(bool over)
 	{
+		if(over)
+		{
 		_sprite.spriteName=_highlighted;
 		_buttonSound.OnHover(true);
 		_buttonScale.OnHover(true);
+		}
+		else
+		{
+			_sprite.spriteName=_normal;
+			_buttonSound.OnHover(false);
+			_buttonScale.OnHover(false);
+		}
+
 
 	}
-	public void OnPress()
+	public void OnPress(bool over)
 	{
+		if(over)
+		{
+		_sprite.spriteName=_highlighted;
 		_buttonScale.OnPress(true);
+		_buttonSound.OnPress(true);
+		}
+		else
+		{
+			_buttonScale.OnPress(false);
+			_buttonSound.OnPress(false);
+		}
 
 	}
-	public void Normal()
+	public void Normal(bool over)
 	{
 		_sprite.spriteName=_normal;
 		_buttonScale.OnHover(false);

@@ -176,6 +176,7 @@
      <Compile Include="Assets\Scripts\GameRunningData\GameRunningData.cs" />
      <Compile Include="Assets\Scripts\GameUI\GameUIController.cs" />
      <Compile Include="Assets\Scripts\LogoScene\CheckBoxState.cs" />
+     <Compile Include="Assets\Scripts\LogoScene\CheckModeUI.cs" />
      <Compile Include="Assets\Scripts\LogoScene\ChooseCarController.cs" />
      <Compile Include="Assets\Scripts\LogoScene\LogoViewController.cs" />
      <Compile Include="Assets\Scripts\LogoScene\ModeSprite.cs" />
