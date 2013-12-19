@@ -25,14 +25,16 @@ public class ModeSprite : MonoBehaviour {
 		if(over)
 		{
 		_sprite.spriteName=_highlighted;
+		_sprite.MakePixelPerfect();
 		_buttonSound.OnHover(true);
 		_buttonScale.OnHover(true);
 		}
 		else
 		{
 			_sprite.spriteName=_normal;
-			_buttonSound.OnHover(false);
-			_buttonScale.OnHover(false);
+			_sprite.MakePixelPerfect();
+//			_buttonSound.OnHover(false);
+//			_buttonScale.OnHover(false);
 		}
 
 
@@ -42,6 +44,7 @@ public class ModeSprite : MonoBehaviour {
 		if(over)
 		{
 		_sprite.spriteName=_highlighted;
+		_sprite.MakePixelPerfect();
 		_buttonScale.OnPress(true);
 		_buttonSound.OnPress(true);
 		}
@@ -55,6 +58,7 @@ public class ModeSprite : MonoBehaviour {
 	public void Normal(bool over)
 	{
 		_sprite.spriteName=_normal;
+		_sprite.MakePixelPerfect();
 		_buttonScale.OnHover(false);
 
 	}
