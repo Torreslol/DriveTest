@@ -22,24 +22,7 @@ public class ChooseCarController : UIController {
 	// Update is called once per frame
 	void Update ()
 	{
-		if(Input.GetButton("Car"))
-		{
-			_car._checkBox.isChecked=true;
-		}
-		if(Input.GetButton("PassengerBus"))
-		{
-			_passengerbus._checkBox.isChecked=true;
-		}
-		if(Input.GetButton("Truck"))
-		{
 
-			_truck._checkBox.isChecked=true;
-		}
-		if(Input.GetButton("SchoolBus"))
-		{
-			_schoolbus._checkBox.isChecked=true;
-		}
-	
 	}
 	public void Back()
 	{

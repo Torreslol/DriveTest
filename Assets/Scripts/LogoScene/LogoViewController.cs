@@ -9,7 +9,9 @@ public class LogoViewController : UIController
 		public ChooseCarController _chooseView;
 		public Vector3 forwardPosition;
 		public Vector3 backgroundPosition;
-	    
+	    private int i=0; 
+	    public  CheckModeUI _checkModeUI;
+	    public  GameObject _animation;
 
 
 
@@ -27,6 +29,8 @@ public class LogoViewController : UIController
 		// Update is called once per frame
 		void Update ()
 		{
+		  
+
 	
 		}
 		/// <summary>
@@ -42,6 +46,7 @@ public class LogoViewController : UIController
 		       {
 		case Mode.overMan:
 			GameRunningData.instance._gameMode=Mode.overMan;
+
 
 						break;
 		case Mode.overTime:

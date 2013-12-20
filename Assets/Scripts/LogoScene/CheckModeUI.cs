@@ -8,9 +8,10 @@ public class CheckModeUI : MonoBehaviour {
 	public ModeSprite _pilao;
 
 
+
 	// Use this for initialization
 	void Start () {
-		SelectChaoyuan();
+
 	
 	}
 	public void SelectChaoyuan()

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Reachability : MonoBehaviour {
-	public Reachability instance=null;
+	public static Reachability instance=null;
 	public LogitechGSDK.LogiControllerPropertiesData _properties;
 	public LogitechGSDK.DIJOYSTATE2ENGINES _rec;
 	private bool _init;
