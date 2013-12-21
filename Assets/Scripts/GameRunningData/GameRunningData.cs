@@ -19,7 +19,8 @@ public enum CarType
 };
 public enum PanelType
 {
-	selectMode=0,
+	none=0,
+	selectMode,
 	selectCar
 
 };

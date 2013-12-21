@@ -10,6 +10,7 @@ public class ChooseCarController : UIController {
 	public CheckBoxState _passengerbus;
 	public CheckBoxState _truck;
 	public Transform _panelDraggable;
+	public GameObject _animation;
 	// Use this for initialization
 	void Start ()
 	{
@@ -22,11 +23,27 @@ public class ChooseCarController : UIController {
 	// Update is called once per frame
 	void Update ()
 	{
-
+		if(base._panel==PanelType.selectCar)
+		{
+			_animation.SetActive(true);
+			if(Reachability.instance._rec.lY<0)
+			{
+				StartGame();
+			}
+			if(Reachability.instance._rec.lRz<-20000)
+			{
+				Back();
+			}
+		}
+		else
+		{
+			_animation.SetActive(false);
+		}
 	}
 	public void Back()
 	{
 		GoBackground();
+		base._panel=PanelType.selectMode;
 		_logoView.GoForward();
 		
 	}
@@ -34,6 +51,7 @@ public class ChooseCarController : UIController {
 	{
 		if(!Application.isLoadingLevel)
 		{
+		base._panel=PanelType.none;
 		Application.LoadLevel("MainScene");
 		}
 	}

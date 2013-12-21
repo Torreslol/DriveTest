@@ -13,6 +13,7 @@ public class UIController : MonoBehaviour {
 	void Start () {
 		_forwardPosition=new Vector3(0,transform.localPosition.y,transform.localPosition.z);
 		_backgroundPosition=new Vector3(2000,transform.localPosition.y,transform.localPosition.z);
+		_panel=PanelType.selectMode;
 	}
 	
 	// Update is called once per frame
